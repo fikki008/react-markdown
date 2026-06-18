@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  background:
+   radial-gradient(
+    rgba(255,255,255, 0.04) 4px,
+    transparent 4px
+   ),
+  
+    radial-gradient(
+      circle at top left,
+      rgba(169, 85, 247, 0.654),
+      transparent 35%
+  ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(59, 131, 246, 0.557) 0%,
+      transparent 35%
+  ),
+    linear-gradient(
+      135deg,
+      #030712,
+      #0f172a,
+      #1e1b4b
+  );
+  background-size: 
+  40px 40px,
+  100% 100%,
+  100% 100%,
+  100% 100%;
+  background-repeat: 
+  repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  color: #e2e8f0;
+}
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(168, 85, 247,0.12),
+    transparent 25%
+  ),
+  radial-gradient(
+    circle at 80% 80%,
+    rgba(59, 130, 246,0.12),
+    transparent 25%
+  );
+  pointer-events: none;
+}
+h2{
+  margin: 0;
+}
